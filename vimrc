@@ -13,7 +13,7 @@ syntax on
 " Vim UI
 "--------
 " color scheme
-set background=dark
+set background=light
 color solarized
 
 " highlight current line
@@ -46,6 +46,13 @@ set laststatus=2                                                  " use 2 lines 
 set matchtime=2                                                   " show matching bracket for 0.2 seconds
 set matchpairs+=<:>                                               " specially for html
 " set relativenumber
+
+" Set swap file to .vim-tmp folder.
+" See https://github.com/boot-clj/boot/wiki/For-Vim-Users
+set backup
+set swapfile
+set backupdir=~/.vim-tmp
+set directory=~/.vim-tmp
 
 " Default Indentation
 set autoindent
